@@ -37,3 +37,15 @@ input{
 	margin-left: 15px;
 }
 
+
+@media only screen and (max-width: 768px) {
+	
+	.container{
+		min-width: 100%;
+	}
+
+	body{
+		padding-top: 0px;
+		background-color: white;
+	}
+}
