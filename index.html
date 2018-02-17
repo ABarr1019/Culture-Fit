@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-10">
+	<title>Culture Fit App</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+	
+
+
+
+	<div class="container">
+		<header>Job Matcher</header>
+		<br>
+		<p><em>please answer the following questions to start the matching process.</em></p>
+	<form>
+		<div class="form-group">
+			<label for="name">Name</label>
+			<div class="col-md-10">
+				<input type="text" class="form-control" id="name">
+			</div>
+		</div>
+		<br>
+		<div class="form-group">
+			<label for="email">Email</label>
+			<div class="col-md-10">
+				<input type="text" class="form-control" id="email">
+			</div>
+		</div>
+		<br>
+		<div class="form-group">
+			<label for="phone">Phone Number</label>
+			<div class="col-md-10">
+				<input type="tel" class="form-control" id="phone">
+			</div>
+		</div>
+		<br>
+
+		<div class="form-group">
+			<label for="q1">Are you an applicant or employee?</label><br>
+			<select class="col-md-9" class="form-control" id="applicantEmployee" >
+				<option value="applicant">Applicant</option>
+				<option value="employee">Employee</option>
+			</select>
+		</div>
+		<br>
+		<div class="slidecontainer">
+			<label for="q2">What is your experience with Trello?</label> <br>
+			<label for="range">low</label>
+		  	<input type="range" min="1" max="5" value="1" class="slider" id="exRange"> <label for="range">high</label>
+		</div>
+		<br>
+		<div class="form-group">
+			<label for="q3">What is your preferred method of communication?</label><br>
+			<input type="radio" name="applicant" value="applicant"> Slack <br>
+			<input type="radio" name="applicant" value="employee"> Email <br>
+			<input type="radio" name="applicant" value="applicant"> Scheduled Meeting <br>
+			<input type="radio" name="applicant" value="employee"> Sitting with Team <br>
+		</div>
+		<br>
+		<div class="form-group">
+			<label for="q4">What would you do if a coworker was misleading another coworker?</label><br>
+			<input type="radio" name="applicant" value="applicant"> Beat them up <br>
+			<input type="radio" name="applicant" value="employee"> Help the other coworker <br>
+			<input type="radio" name="applicant" value="applicant"> Tell a manager <br>
+			<input type="radio" name="applicant" value="employee"> Nothing, who cares? <br>
+		</div>
+		<button type="reset" class="btn btn-primary" value="Reset Form">Submit</button>
+
+	</form>
+		
+	</div>
+
+
+	
+</body>
+</html>
